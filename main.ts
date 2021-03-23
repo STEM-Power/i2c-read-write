@@ -35,7 +35,7 @@ namespace I2C_Read_Write {
     //% blockId="I2C_ReadByte" block="read byte from address %addr|register %reg"
     //% weight=99 blockGap=8
     export function read_byte(addr: number, reg: number): number {
-        pins.i2cWriteNumber(addr, addr, NumberFormat.UInt16BE);
+        pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
         return pins.i2cReadNumber(addr, NumberFormat.UInt8BE);
     }
 
@@ -64,7 +64,7 @@ namespace I2C_Read_Write {
     //% blockId="I2C_Read2Bytes" block="read 2 bytes from address %addr|register %reg"
     //% weight=89 blockGap=8
     export function read_2bytes(addr: number, reg: number): number {
-        pins.i2cWriteNumber(addr, addr, NumberFormat.UInt16BE);
+        pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
         return pins.i2cReadNumber(addr, NumberFormat.UInt16BE);
     }
 
@@ -95,7 +95,7 @@ namespace I2C_Read_Write {
     //% blockId="I2C_Read4Bytes" block="read 4 bytes from address %addr|register %reg"
     //% weight=79 blockGap=8
     export function read_4bytes(addr: number, reg: number): number {
-        pins.i2cWriteNumber(addr, addr, NumberFormat.UInt16BE);
+        pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
         return pins.i2cReadNumber(addr, NumberFormat.Int32BE);
     }
 }
