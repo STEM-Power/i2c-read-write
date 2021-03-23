@@ -13,8 +13,8 @@ namespace I2C_Read_Write {
 
     /**
      * write a byte to special register
-     * @param I2C device address, eg: 80
-     * @param I2C device register, eg: 1
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 1
      * @param dat is the data will be write, eg: 10
      */
     //% blockId="I2C_WriteByte" block="address %addr|register %reg|write byte %dat"
@@ -29,8 +29,8 @@ namespace I2C_Read_Write {
 
     /**
      * read a byte from special register
-     * @param I2C device address, eg: 80
-     * @param I2C device register, eg: 1
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 1
      */
     //% blockId="I2C_ReadByte" block="read byte from address %addr|register %reg"
     //% weight=99 blockGap=8
@@ -41,8 +41,8 @@ namespace I2C_Read_Write {
 
     /**
      * write a 2 bytes to special register
-     * @param I2C device address, eg: 80
-     * @param I2C device register, eg: 2
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 2
      * @param dat is the data will be write, eg: 6
      */
     //% blockId="I2C_Write2Bytes" block="address %addr|register %reg|write 2 bytes %dat"
@@ -58,8 +58,8 @@ namespace I2C_Read_Write {
 
     /**
      * read a 2 bytes from special register
-     * @param I2C device address, eg: 80
-     * @param I2C device register, eg: 2
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 2
      */
     //% blockId="I2C_Read2Bytes" block="read 2 bytes from address %addr|register %reg"
     //% weight=89 blockGap=8
@@ -70,8 +70,8 @@ namespace I2C_Read_Write {
 
     /**
      * write a 4 bytes to special register
-     * @param I2C device address, eg: 80
-     * @param I2C device register, eg: 4
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 4
      * @param dat is the data will be write, eg: 7
      */
     //% blockId="I2C_Write4Bytes" block="address %addr|register %reg|write 4 bytes %dat"
@@ -89,8 +89,8 @@ namespace I2C_Read_Write {
 
     /**
      * read a 4 bytes from special register
-     * @param I2C device address, eg: 80
-     * @param I2C device register, eg: 4
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 4
      */
     //% blockId="I2C_Read4Bytes" block="read 4 bytes from address %addr|register %reg"
     //% weight=79 blockGap=8
