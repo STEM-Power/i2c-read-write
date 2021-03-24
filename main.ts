@@ -7,7 +7,7 @@
 /**
  * I2C Read Write block
  */
-//% weight=100 color=#BB5A5A icon="\f0e8" block="I2C Read & Write"
+//% weight=100 color=#BB5A5A icon="\uf0e8" block="I2C Read & Write"
 namespace I2C_Read_Write {
     let AT24_I2C_ADDR = 80;
 
