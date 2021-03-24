@@ -1,16 +1,15 @@
 /**
  * makecode I2C Read Write Package.
- * From microbit/micropython Chinese community.
- * http://www.micropython.org.cn
- */
+ * From STEM Power Limited.
+ * https://stem-power.com
+ *  */
 
 /**
  * I2C Read Write block
  */
 //% weight=100 color=#BB5A5A icon="\uf0e8" block="I2C Read & Write"
 namespace I2C_Read_Write {
-    let AT24_I2C_ADDR = 80;
-
+    
     /**
      * write a byte to special register
      * @param addr I2C device address, eg: 80
