@@ -1,7 +1,7 @@
 {
     "name": "I2C read write",
     "version": "0.0.1",
-    "description": "",
+    "description": "MakeCode I2C read and write package for microbit",
     "dependencies": {
         "core": "*",
         "radio": "*",
