@@ -11,7 +11,7 @@
 namespace I2C_Read_Write {
     
     /**
-     * write a byte to special register
+     * write a byte to specific register
      * @param addr I2C device address, eg: 80
      * @param reg I2C device register, eg: 1
      * @param dat is the data will be write, eg: 10
@@ -27,7 +27,7 @@ namespace I2C_Read_Write {
     }
 
     /**
-     * read a byte from special register
+     * read a byte from specific register
      * @param addr I2C device address, eg: 80
      * @param reg I2C device register, eg: 1
      */
@@ -39,7 +39,7 @@ namespace I2C_Read_Write {
     }
 
     /**
-     * write 2 bytes to special register
+     * write 2 bytes to specific register
      * @param addr I2C device address, eg: 80
      * @param reg I2C device register, eg: 2
      * @param dat is the data will be write, eg: 6
@@ -56,7 +56,7 @@ namespace I2C_Read_Write {
     }
 
     /**
-     * read 2 bytes from special register
+     * read 2 bytes from specific register
      * @param addr I2C device address, eg: 80
      * @param reg I2C device register, eg: 2
      */
@@ -68,7 +68,7 @@ namespace I2C_Read_Write {
     }
 
     /**
-     * write 4 bytes to special register
+     * write 4 bytes to specific register
      * @param addr I2C device address, eg: 80
      * @param reg I2C device register, eg: 4
      * @param dat is the data will be write, eg: 7
@@ -87,7 +87,7 @@ namespace I2C_Read_Write {
     }
 
     /**
-     * read 4 bytes from special register
+     * read 4 bytes from specific register
      * @param addr I2C device address, eg: 80
      * @param reg I2C device register, eg: 4
      */
