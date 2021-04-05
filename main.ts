@@ -10,6 +10,7 @@
 //% weight=100 color=#BB5A5A icon="\uf0e8" block="I2C Read & Write"
 namespace I2C_Read_Write {
     
+
     /**
      * write a byte to specific register
      * @param addr I2C device address, eg: 80
@@ -27,15 +28,51 @@ namespace I2C_Read_Write {
     }
 
     /**
-     * read a byte from specific register
+     * read a byte from specific register in Uint8BE format
      * @param addr I2C device address, eg: 80
      * @param reg I2C device register, eg: 1
      */
-    //% blockId="I2C_ReadByte" block="read byte from address %addr|register %reg"
+    //% blockId="I2C_Read_Uint8BE" block="read byte from address %addr|register %reg"
     //% weight=99 blockGap=8
-    export function read_byte(addr: number, reg: number): number {
+    export function read_byte_Uint8BE(addr: number, reg: number): number {
         pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
         return pins.i2cReadNumber(addr, NumberFormat.UInt8BE);
+    }
+
+  /**
+     * read a byte from specific register in Uint8LE format
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 1
+     */
+    //% blockId="I2C_Read_Uint8LE" block="read byte from address %addr|register %reg"
+    //% weight=98 blockGap=8
+    export function read_byte_Uint8LE(addr: number, reg: number): number {
+        pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
+        return pins.i2cReadNumber(addr, NumberFormat.UInt8LE);
+    }
+    
+    /**
+     * read a byte from specific register in Int8BE format
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 1
+     */
+    //% blockId="I2C_Read_Int8BE" block="read byte from address %addr|register %reg"
+    //% weight=97 blockGap=8
+    export function read_byte_Int8BE(addr: number, reg: number): number {
+        pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
+        return pins.i2cReadNumber(addr, NumberFormat.Int8BE);
+    }
+
+    /**
+     * read a byte from specific register in Int8LE format
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 1
+     */
+    //% blockId="I2C_Read_Int8LE" block="read byte from address %addr|register %reg"
+    //% weight=96 blockGap=8
+    export function read_byte_Int8LE(addr: number, reg: number): number {
+        pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
+        return pins.i2cReadNumber(addr, NumberFormat.Int8LE);
     }
 
     /**
@@ -56,16 +93,54 @@ namespace I2C_Read_Write {
     }
 
     /**
-     * read 2 bytes from specific register
+     * read 2 bytes from specific register in Uint16BE format
      * @param addr I2C device address, eg: 80
      * @param reg I2C device register, eg: 2
      */
-    //% blockId="I2C_Read2Bytes" block="read 2 bytes from address %addr|register %reg"
+    //% blockId="I2C_Read2Bytes_Uint16BE" block="read 2 bytes from address %addr|register %reg"
     //% weight=89 blockGap=8
-    export function read_2bytes(addr: number, reg: number): number {
+    export function read_2bytes_Uint16BE(addr: number, reg: number): number {
         pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
         return pins.i2cReadNumber(addr, NumberFormat.UInt16BE);
     }
+
+    /**
+     * read 2 bytes from specific register in Uint16LE format
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 2
+     */
+    //% blockId="I2C_Read2Bytes_Uint16LE" block="read 2 bytes from address %addr|register %reg"
+    //% weight=88 blockGap=8
+    export function read_2bytes_Uint16LE(addr: number, reg: number): number {
+        pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
+        return pins.i2cReadNumber(addr, NumberFormat.UInt16LE);
+    }
+
+
+    /**
+     * read 2 bytes from specific register in Int16BE format
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 2
+     */
+    //% blockId="I2C_Read2Bytes_Int16BE" block="read 2 bytes from address %addr|register %reg"
+    //% weight=87 blockGap=8
+    export function read_2bytes_Int16BE(addr: number, reg: number): number {
+        pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
+        return pins.i2cReadNumber(addr, NumberFormat.Int16BE);
+    }
+
+    /**
+     * read 2 bytes from specific register in Int16LE format
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 2
+     */
+    //% blockId="I2C_Read2Bytes_Int16LE" block="read 2 bytes from address %addr|register %reg"
+    //% weight=86 blockGap=8
+    export function read_2bytes_Int16LE(addr: number, reg: number): number {
+        pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
+        return pins.i2cReadNumber(addr, NumberFormat.Int16LE);
+    }
+
 
     /**
      * write 4 bytes to specific register
@@ -87,14 +162,49 @@ namespace I2C_Read_Write {
     }
 
     /**
-     * read 4 bytes from specific register
+     * read 4 bytes from specific register in Uint32BE format
      * @param addr I2C device address, eg: 80
      * @param reg I2C device register, eg: 4
      */
-    //% blockId="I2C_Read4Bytes" block="read 4 bytes from address %addr|register %reg"
+    //% blockId="I2C_Read4Bytes_Uint32BE" block="read 4 bytes from address %addr|register %reg"
     //% weight=79 blockGap=8
-    export function read_4bytes(addr: number, reg: number): number {
+    export function read_4bytes_Uint32BE(addr: number, reg: number): number {
+        pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
+        return pins.i2cReadNumber(addr, NumberFormat.UInt32BE);
+    }
+
+    /**
+     * read 4 bytes from specific register in Uint32LE format
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 4
+     */
+    //% blockId="I2C_Read4Bytes_Uint32LE" block="read 4 bytes from address %addr|register %reg"
+    //% weight=78 blockGap=8
+    export function read_4bytes_Uint32LE(addr: number, reg: number): number {
+        pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
+        return pins.i2cReadNumber(addr, NumberFormat.UInt32LE);
+    }
+ /**
+     * read 4 bytes from specific register in Int32BE format
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 4
+     */
+    //% blockId="I2C_Read4Bytes_Int32BE" block="read 4 bytes from address %addr|register %reg"
+    //% weight=77 blockGap=8
+    export function read_4bytes_Int32BE(addr: number, reg: number): number {
         pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
         return pins.i2cReadNumber(addr, NumberFormat.Int32BE);
+    }
+
+    /**
+     * read 4 bytes from specific register in Int32LE format
+     * @param addr I2C device address, eg: 80
+     * @param reg I2C device register, eg: 4
+     */
+    //% blockId="I2C_Read4Bytes_Int32LE" block="read 4 bytes from address %addr|register %reg"
+    //% weight=76 blockGap=8
+    export function read_4bytes_Int32LE(addr: number, reg: number): number {
+        pins.i2cWriteNumber(addr, reg, NumberFormat.UInt16BE);
+        return pins.i2cReadNumber(addr, NumberFormat.Int32LE);
     }
 }
