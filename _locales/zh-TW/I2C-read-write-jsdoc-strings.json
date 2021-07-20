@@ -1,5 +1,5 @@
 {
-  "I2C_Read_Write": "Microbit makecode 專用I2C 讀寫擴充。\nSTEM Power Limited.\nhttps://stem-power.com\n\nI2C Read Write block",
+  "I2C_Read_Write": "Microbit makecode 專用I2C 讀寫擴充\nSTEM Power Limited.\nhttps://stem-power.com\n\nI2C Read Write block",
   "I2C_Read_Write.read_2bytes_Int16BE": "在指定的I2C設備和寄存器位置中，以 Int16BE 數位儲存格式讀取2 bytes數據",
   "I2C_Read_Write.read_2bytes_Int16BE|param|addr": "I2C設備地址, eg: 80",
   "I2C_Read_Write.read_2bytes_Int16BE|param|reg": "I2C設備中寄存器的位置, eg: 2",
