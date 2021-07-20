@@ -16,5 +16,4 @@
   "I2C_Read_Write.write_byte|block": "I2C地址 %addr|寄存器位置 %reg|寫入1 byte數值 %dat",
   "I2C_Read_Write|block": "I2C Read & Write",
   "{id:category}I2C_Read_Write": "I2C_Read_Write"
-
 }
