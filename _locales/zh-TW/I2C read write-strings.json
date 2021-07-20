@@ -1,0 +1,20 @@
+{
+  "I2C_Read_Write.read_2bytes_Int16BE|block": "讀取 Int16BE，I2C地址 %addr|寄存器位置 %reg",
+  "I2C_Read_Write.read_2bytes_Int16LE|block": "讀取 Int16LE，I2C地址 %addr|寄存器位置 %reg",
+  "I2C_Read_Write.read_2bytes_Uint16BE|block": "讀取 Uint16BE，I2C地址 %addr|寄存器位置 %reg",
+  "I2C_Read_Write.read_2bytes_Uint16LE|block": "讀取 Uint16LE，I2C地址 %addr|寄存器位置 %reg",
+  "I2C_Read_Write.read_4bytes_Int32BE|block": "讀取 Int32BE，I2C地址 %addr|寄存器位置 %reg",
+  "I2C_Read_Write.read_4bytes_Int32LE|block": "讀取 Int32LE，I2C地址 %addr|寄存器位置 %reg",
+  "I2C_Read_Write.read_4bytes_Uint32BE|block": "讀取 Uint32BE，I2C地址 %addr|寄存器位置 %reg",
+  "I2C_Read_Write.read_4bytes_Uint32LE|block": "讀取 Uint32LE，I2C地址 %addr|寄存器位置 %reg",
+  "I2C_Read_Write.read_byte_Int8BE|block": "讀取 Int8BE，I2C地址 %addr|寄存器位置 %reg",
+  "I2C_Read_Write.read_byte_Int8LE|block": "讀取 Int8LE，I2C地址 %addr|寄存器位置 %reg",
+  "I2C_Read_Write.read_byte_Uint8BE|block": "讀取 Uint8BE，I2C地址 %addr|寄存器位置 %reg",
+  "I2C_Read_Write.read_byte_Uint8LE|block": "讀取 Uint8LE，I2C地址 %addr|寄存器位置 %reg",
+  "I2C_Read_Write.write_2bytes|block": "I2C地址 %addr|寄存器位置 %reg|寫入 2 bytes數值 %dat",
+  "I2C_Read_Write.write_4bytes|block": "I2C地址 %addr|寄存器位置 %reg|寫入 4 bytes數值 %dat",
+  "I2C_Read_Write.write_byte|block": "I2C地址 %addr|寄存器位置 %reg|寫入1 byte數值 %dat",
+  "I2C_Read_Write|block": "I2C Read & Write",
+  "{id:category}I2C_Read_Write": "I2C_Read_Write"
+
+}
